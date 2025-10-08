@@ -4,7 +4,7 @@ import { useCallback, useState, useEffect } from 'react'
 
 type IonInputProps = React.ComponentProps<typeof IonInput>
 
-type MoneyInputProps = IonInputProps & {
+type IonCurrencyInputProps = IonInputProps & {
   value: number
   onChange: (value: number) => void
   locale?: string
@@ -14,7 +14,7 @@ type MoneyInputProps = IonInputProps & {
   useGrouping?: boolean
 }
 
-export default function IonCurrencyInput(props: MoneyInputProps) {
+export default function IonCurrencyInput(props: IonCurrencyInputProps) {
   const {
     value,
     onChange,
